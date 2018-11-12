@@ -4,13 +4,13 @@
 #include <stdio.h>
 #include "reunion.h"
 
-typedef struct reunion {
+struct reunion {
     pthread_mutex_t mutex;
     pthread_cond_t cond;
     int entraron;
     int salir;
     int condicion;
-}reunion;
+};
 
 
 Reunion *nuevaReunion(){
